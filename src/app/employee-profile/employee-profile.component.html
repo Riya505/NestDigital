@@ -1,0 +1,32 @@
+<app-employee-dashboard></app-employee-dashboard>
+
+<section style="background-color: #eee;">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    
+                <div class="container">
+    
+                        <div class="row g-3">
+                            
+                            <div *ngFor="let i of data" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Id : {{i.emp_id}}</h5>
+                                      <p class="card-text">Name : {{i.name}}</p>
+                                      <p class="card-text">designation : {{i.designation}}</p>
+                                      <p class="card-text">company name : {{i.company_name}}</p>
+                                      <p class="card-text">Date of Birth : {{i.dob}}</p>
+                                      <p class="card-text">gender : {{i.gender}}</p>
+                                      <p class="card-text">email : {{i.email}}</p>
+                                      <p class="card-text">password : {{i.password}}</p>
+                                    </div>
+                                  </div>
+                            </div>
+                     </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>

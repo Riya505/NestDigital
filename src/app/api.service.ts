@@ -38,4 +38,10 @@ export class ApiService {
   searchSecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/viewSingleSecurity",data)
   }
+  employeeLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/login",data)
+  }
+  EmployeeMyProfile=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchEmployee",data)
+  }
 }
