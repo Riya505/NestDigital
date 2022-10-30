@@ -1,0 +1,45 @@
+<app-employee-dashboard></app-employee-dashboard>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">employee id</label>
+                    <input type="text" class="form-control" name="emp_id" [(ngModel)]="emp_id">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">start_Date</label>
+                    <input type="date" name="start_Date" id="" class="form-control" [(ngModel)]="start_Date">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">end_Date</label>
+                    <input type="date" name="end_Date" id="" class="form-control" [(ngModel)]="end_Date">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">duration</label>
+                    <input type="text" class="form-control" name="duration" [(ngModel)]="duration">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">type</label>
+                    <select name="type" id="" class="form-control" [(ngModel)]="type">
+                        <option value="General_leave">General_leave</option>
+                        <option value="Duty_leave">Duty_leave</option>
+                        <option value="Loss of pay">Loss of pay</option>
+                        <option value="General leave contract">General leave contract</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">reason</label>
+                    <input type="text" class="form-control" name="reason" [(ngModel)]="reason">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">status</label>
+                    <input type="text" class="form-control" name="status" [(ngModel)]="status">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button class="btn btn-success" (click)="readValue()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

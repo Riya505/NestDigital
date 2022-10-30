@@ -18,6 +18,7 @@ import { SearchsecurityComponent } from './searchsecurity/searchsecurity.compone
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 
 const appRoutes:Routes=[
   {
@@ -49,6 +50,9 @@ const appRoutes:Routes=[
   },
   {
     path:"myProfile",component:EmployeeProfileComponent
+  },
+  {
+    path:"applyleave",component:ApplyLeaveComponent
   }
 ]
 @NgModule({
@@ -65,7 +69,8 @@ const appRoutes:Routes=[
     SearchsecurityComponent,
     EmployeeLoginComponent,
     EmployeeDashboardComponent,
-    EmployeeProfileComponent
+    EmployeeProfileComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
