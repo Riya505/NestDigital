@@ -15,35 +15,38 @@
                 <div *ngFor="let i of data">
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">emp_id</label>
-                        <input type="text" class="form-control" value="{{i.emp_id}}">
+                        <input type="text" class="form-control" value="{{i.emp_id}}" [(ngModel)]="i.emp_id">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">name</label>
-                        <input type="text" class="form-control" value="{{i.name}}">
+                        <input type="text" class="form-control" value="{{i.name}}" [(ngModel)]="i.name">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">designation</label>
-                        <input type="text" class="form-control" value="{{i.designation}}">
+                        <input type="text" class="form-control" value="{{i.designation}}" [(ngModel)]="i.designation">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">company_name</label>
-                        <input type="text" class="form-control" value="{{i.company_name}}">
+                        <input type="text" class="form-control" value="{{i.company_name}}" [(ngModel)]="i.company_name">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">dob</label>
-                        <input type="text" class="form-control" value="{{i.dob}}">
+                        <input type="text" class="form-control" value="{{i.dob}}" [(ngModel)]="i.dob">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">gender</label>
-                        <input type="text" class="form-control" value="{{i.gender}}">
+                        <input type="text" class="form-control" value="{{i.gender}}" [(ngModel)]="i.gender">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">email</label>
-                        <input type="text" class="form-control" value="{{i.gender}}">
+                        <input type="text" class="form-control" value="{{i.email}}" [(ngModel)]="i.email">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <label for="" class="form-label">password</label>
-                        <input type="text" class="form-control" value="{{i.gender}}">
+                        <input type="text" class="form-control" value="{{i.password}}" [(ngModel)]="i.password">
+                    </div><br>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <button class="btn btn-success" (click)="editEmployee()">Update</button>
                     </div>
 
                 </div>
