@@ -14,6 +14,7 @@ import { SearchemployeeComponent } from './searchemployee/searchemployee.compone
 import { EmployeeLeaveReqestComponent } from './employee-leave-reqest/employee-leave-reqest.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 
 const appRoutes:Routes=[
   {
@@ -36,6 +37,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewsecurity",component:ViewsecurityComponent
+  },
+  {
+    path:"searchsecurity",component:SearchsecurityComponent
   }
 ]
 @NgModule({
@@ -48,7 +52,8 @@ const appRoutes:Routes=[
     SearchemployeeComponent,
     EmployeeLeaveReqestComponent,
     AddsecurityComponent,
-    ViewsecurityComponent
+    ViewsecurityComponent,
+    SearchsecurityComponent
   ],
   imports: [
     BrowserModule,
