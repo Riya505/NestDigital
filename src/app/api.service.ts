@@ -29,4 +29,7 @@ export class ApiService {
   updateLeaveStatus=(data:any)=>{
     return this.http.post("http://localhost:8080/UpdateLeaveRequest",data)
   }
+  addSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/SecurityData",data)
+  }
 }

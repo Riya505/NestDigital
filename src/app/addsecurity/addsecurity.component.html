@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">securityId</label>
+                    <input type="text" class="form-control" name="securityId" [(ngModel)]="securityId">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">security Name</label>
+                    <input type="text" class="form-control" name="securityName" [(ngModel)]="securityName">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">phone</label>
+                    <input type="text" class="form-control" name="phone" [(ngModel)]="phone">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">address</label>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Date of Birth</label>
+                    <input type="date" name="dob" id="" class="form-control" [(ngModel)]="dob">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">date of join</label>
+                    <input type="date" name="doj" id="" class="form-control" [(ngModel)]="doj">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">email</label>
+                    <input type="email" name="email" id="" class="form-control" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">password</label>
+                    <input type="password" name="password" id="" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button class="btn btn-success" (click)="readValue()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
