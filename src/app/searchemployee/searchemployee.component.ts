@@ -24,10 +24,13 @@ export class SearchemployeeComponent implements OnInit {
     )
   }
 
-
-
-
-
+  editEmployee=()=>{
+    this.myapi.editEmployee(this.data[0]).subscribe(
+      (resp)=>{
+        alert("Successfully updated")
+      }
+    )
+  }
 
   data:any=[]
   ngOnInit(): void {
