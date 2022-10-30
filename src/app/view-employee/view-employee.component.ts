@@ -20,6 +20,18 @@ export class ViewEmployeeComponent implements OnInit {
     )
   }
 
+  deleteEmploye=(emp_id:any)=>{
+    let data={
+      "emp_id":emp_id
+    }
+    this.myapi.deleteEmployee(data).subscribe(
+      (resp)=>{
+        alert("DELETED!!")
+      }
+    )
+    this.fetchData()
+  }
+
   EmployeData:any=[]
 
   ngOnInit(): void {
