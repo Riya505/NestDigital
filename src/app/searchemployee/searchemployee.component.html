@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Enter employee id</label>
+                    <input type="text" class="form-control" name="emp_id" [(ngModel)]="emp_id">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Search</button>
+                </div>
+                <div *ngFor="let i of data">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">emp_id</label>
+                        <input type="text" class="form-control" value="{{i.emp_id}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">name</label>
+                        <input type="text" class="form-control" value="{{i.name}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">designation</label>
+                        <input type="text" class="form-control" value="{{i.designation}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">company_name</label>
+                        <input type="text" class="form-control" value="{{i.company_name}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">dob</label>
+                        <input type="text" class="form-control" value="{{i.dob}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">gender</label>
+                        <input type="text" class="form-control" value="{{i.gender}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">email</label>
+                        <input type="text" class="form-control" value="{{i.gender}}">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">password</label>
+                        <input type="text" class="form-control" value="{{i.gender}}">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
