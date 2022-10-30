@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+            <div class="row g-3">
+                <h2>Security login</h2>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">password</label>
+                    <input type="password" name="password" id="" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                    <button class="btn btn-secondary" (click)="readValues()">login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

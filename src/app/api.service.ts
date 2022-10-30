@@ -50,4 +50,7 @@ export class ApiService {
   viewEmployeeLeaveStatus=(data:any)=>{
     return this.http.post("http://localhost:8080/viewLeaveRequest",data)
   }
+  SecurityLogin=(data:any)=>{
+    return this.http.get("http://localhost:8080/securityLogin",data)
+  }
 }
