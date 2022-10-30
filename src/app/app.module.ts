@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { EmployeeLeaveReqestComponent } from './employee-leave-reqest/employee-leave-reqest.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 
 const appRoutes:Routes=[
   {
@@ -28,6 +29,9 @@ const appRoutes:Routes=[
   },
   {
     path:"allLeave",component:EmployeeLeaveReqestComponent
+  },
+  {
+    path:"addsecurity",component:AddsecurityComponent
   }
 ]
 @NgModule({
@@ -38,7 +42,8 @@ const appRoutes:Routes=[
     AddEmployeeComponent,
     ViewEmployeeComponent,
     SearchemployeeComponent,
-    EmployeeLeaveReqestComponent
+    EmployeeLeaveReqestComponent,
+    AddsecurityComponent
   ],
   imports: [
     BrowserModule,
