@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addEmployee",component:AddEmployeeComponent
+  },
+  {
+    path:"viewemp",component:ViewEmployeeComponent
   }
 ]
 @NgModule({
@@ -23,7 +27,8 @@ const appRoutes:Routes=[
     AppComponent,
     AdminloginComponent,
     NavbarComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
