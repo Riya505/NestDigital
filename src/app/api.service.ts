@@ -47,4 +47,7 @@ export class ApiService {
   applyLeave=(data:any)=>{
     return this.http.post("http://localhost:8080/leave",data)
   }
+  viewEmployeeLeaveStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewLeaveRequest",data)
+  }
 }
