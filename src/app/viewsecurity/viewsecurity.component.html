@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">security Id</th>
+                    <th scope="col">security Name</th>
+                    <th scope="col">phone no</th>
+                    <th scope="col">address</th>
+                    <th scope="col">dob</th>
+                    <th scope="col">doj</th>
+                    <th scope="col">email</th>
+                    <th scope="col">password</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of SecurityData">
+                    <td>{{i.securityId}}</td>
+                    <td>{{i.securityName}}</td>
+                    <td>{{i.phone}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.doj}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.password}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>
