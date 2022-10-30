@@ -23,4 +23,10 @@ export class ApiService {
   editEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/EditEmployee",data)
   }
+  viewEmployeeLeave=()=>{
+    return this.http.get("http://localhost:8080/viewAllLeave")
+  }
+  updateLeaveStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/UpdateLeaveRequest",data)
+  }
 }

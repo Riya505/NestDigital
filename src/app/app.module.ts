@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { EmployeeLeaveReqestComponent } from './employee-leave-reqest/employee-leave-reqest.component';
 
 const appRoutes:Routes=[
   {
@@ -24,6 +25,9 @@ const appRoutes:Routes=[
   },
   {
     path:"searchemp",component:SearchemployeeComponent
+  },
+  {
+    path:"allLeave",component:EmployeeLeaveReqestComponent
   }
 ]
 @NgModule({
@@ -33,7 +37,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
-    SearchemployeeComponent
+    SearchemployeeComponent,
+    EmployeeLeaveReqestComponent
   ],
   imports: [
     BrowserModule,
