@@ -24,9 +24,9 @@ export class SecurityLoginComponent implements OnInit {
         (resp:any)=>{
           if (resp.length>0) {
             localStorage.setItem("securityId",resp[0].securityId)
-            this.myrouter.navigate(["/securityProfile"])
+            this.myrouter.navigate(["/secprofile"])
           } else {
-            
+            alert("Invalid credentials")
           }
         }
       )
