@@ -24,6 +24,7 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { SecuritydashboardComponent } from './securitydashboard/securitydashboard.component';
 import { SecurityprofileComponent } from './securityprofile/securityprofile.component';
 import { EmployeeCheckinComponent } from './employee-checkin/employee-checkin.component';
+import { ViewEmployeeEntryComponent } from './view-employee-entry/view-employee-entry.component';
 
 const appRoutes:Routes=[
   {
@@ -70,6 +71,9 @@ const appRoutes:Routes=[
   },
   {
     path:"checkin",component:EmployeeCheckinComponent
+  },
+  {
+    path:"viewentry",component:ViewEmployeeEntryComponent
   }
 ]
 @NgModule({
@@ -92,7 +96,8 @@ const appRoutes:Routes=[
     SecurityLoginComponent,
     SecuritydashboardComponent,
     SecurityprofileComponent,
-    EmployeeCheckinComponent
+    EmployeeCheckinComponent,
+    ViewEmployeeEntryComponent
   ],
   imports: [
     BrowserModule,
