@@ -21,6 +21,8 @@ import { EmployeeProfileComponent } from './employee-profile/employee-profile.co
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { LeavestatusComponent } from './leavestatus/leavestatus.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecuritydashboardComponent } from './securitydashboard/securitydashboard.component';
+import { SecurityprofileComponent } from './securityprofile/securityprofile.component';
 
 const appRoutes:Routes=[
   {
@@ -61,6 +63,9 @@ const appRoutes:Routes=[
   },
   {
     path:"seclogin",component:SecurityLoginComponent
+  },
+  {
+    path:"secprofile",component:SecurityprofileComponent
   }
 ]
 @NgModule({
@@ -80,7 +85,9 @@ const appRoutes:Routes=[
     EmployeeProfileComponent,
     ApplyLeaveComponent,
     LeavestatusComponent,
-    SecurityLoginComponent
+    SecurityLoginComponent,
+    SecuritydashboardComponent,
+    SecurityprofileComponent
   ],
   imports: [
     BrowserModule,
